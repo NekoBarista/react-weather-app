@@ -12,7 +12,14 @@ function App() {
        <input type='text'placeholder="Enter a City" className="searchBox"></input> 
        <input type='submit' className="btn btn-primary" value="Search"></input>
      </form>
-    </div>
+ 
+      <div className="SmallText">
+         Open Source Code by <a href='https://github.com/NekoBarista/react-weather-app'> Vicki Smith </a> 
+      </div>
+      </div>
+  
+  
+
   );
 }
 
