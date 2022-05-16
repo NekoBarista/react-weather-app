@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  color: greenyellow;
+font-family: "Early GameBoy Regular";
+
+}
+
+h1 { margin-top: 150px;
+
+}
+
+body {
+  background-image: url("./images/gameboy.png.png");
+  background-color: #cccccc;
+  background-position-x: center;
+  background-size: 1000px;
+  background-repeat: no-repeat;
+ }
+
+ .searchBox {
+   width: 20%;
+   margin-right: 1%;
+ }
