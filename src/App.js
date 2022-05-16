@@ -6,6 +6,7 @@ function App() {
      <h1>  Melbourne </h1>
     
      <p> Monday, 16th of May</p>
+     <p> 16.20pm</p>
      <h2> 30°C</h2>
      <h3> Cloudy </h3>
      <form>
