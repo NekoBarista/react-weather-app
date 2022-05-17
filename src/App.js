@@ -3,15 +3,15 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import DisplayDate from './DisplayDate';
 function App() {
- const [weatherData, setWeatherData] = useState({submit:false});
+ const [weatherData, setWeatherData] = useState(null);
  const [submit, setSubmit] = useState(false);
   
 
 function handleResponse(response) {
-console.log(response.data)
+
 
 setWeatherData(
-  {submit: true,
+  {
     temperature:response.data.main.temp, 
     city:response.data.name, 
     description: response.data.weather[0].description, 
@@ -22,7 +22,7 @@ setWeatherData(
 }
 
  
-if(weatherData.submit) {
+if(submit) {
   return (
     <div className="App">    
      <h1>  {weatherData.city} </h1>
