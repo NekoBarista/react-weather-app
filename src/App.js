@@ -2,7 +2,7 @@ import './App.css';
 import React, {useState} from 'react';
 import axios from 'axios';
 function App() {
- const [weatherData, setWeatherData] = useState({});
+ const [weatherData, setWeatherData] = useState({submit:false});
  const [submit, setSubmit] = useState(false);
   
 
@@ -10,7 +10,8 @@ function handleResponse(response) {
 console.log(response.data)
 
 setWeatherData(
-  {temperature:response.data.main.temp, 
+  {submit: true,
+    temperature:response.data.main.temp, 
     city:response.data.name, 
     description: response.data.weather[0].description, 
     iconUrl: "https://cdn.icon-icons.com/icons2/2505/PNG/512/sunny_weather_icon_150663.png" })
@@ -19,7 +20,7 @@ setWeatherData(
 }
 
  
-if(submit) {
+if(weatherData.submit) {
   return (
     <div className="App">    
      <h1>  {weatherData.city} </h1>
