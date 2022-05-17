@@ -18,16 +18,11 @@ function search() {
 const apiKey= "9bf2efd0f6df71b36df66a55219d0c2d"
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 axios.get(apiUrl).then(handleResponse)
-
 }
 
 function handleCitySearch(event) {
 SetCity(event.target.value)
-
 }
-
-
-
 
 function handleResponse(response) {
 setWeatherData(
@@ -54,20 +49,15 @@ if(weatherData.submit) {
       </div>
       </div>
   );}
-else {
 
+  else {
   search()
 return (
   <div>
-  
     Loading...
   </div>
 )
-
-
 }
-}
-  
 
-
+}  
 export default App;
