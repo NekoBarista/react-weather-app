@@ -6,7 +6,7 @@ import WeatherInfo from './WeatherInfo';
 
 function App() {
  const [weatherData, setWeatherData] = useState({submit:false});
- const [city, SetCity] = useState("Melbourne")
+ const [city, SetCity] = useState("Melbourne, Au")
   
 
 function handleSubmit(event){
