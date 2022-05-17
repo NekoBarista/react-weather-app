@@ -1,4 +1,4 @@
-import React from "react";
+import './DisplayDate.css';
 
 export default function FormattedDate(props) {
   let days = [
