@@ -1,6 +1,7 @@
 import './App.css';
 import React, {useState} from 'react';
 import axios from 'axios';
+import DisplayDate from './DisplayDate';
 function App() {
  const [weatherData, setWeatherData] = useState({submit:false});
  const [submit, setSubmit] = useState(false);
@@ -14,7 +15,8 @@ setWeatherData(
     temperature:response.data.main.temp, 
     city:response.data.name, 
     description: response.data.weather[0].description, 
-    iconUrl: "https://cdn.icon-icons.com/icons2/2505/PNG/512/sunny_weather_icon_150663.png" })
+    iconUrl: "https://cdn.icon-icons.com/icons2/2505/PNG/512/sunny_weather_icon_150663.png",
+  date: new Date(response.data.dt*1000)})
 
     setSubmit(true);
 }
@@ -24,7 +26,7 @@ if(weatherData.submit) {
   return (
     <div className="App">    
      <h1>  {weatherData.city} </h1>
-     <p> Thursday, May 17th, 2022 </p>
+     <p> <DisplayDate date={weatherData.date}/> </p>
      <p> 1.18am</p>
      <img src={weatherData.iconUrl} alt="cloudy"/>
      <h2> {Math.round(weatherData.temperature)}° C / F </h2>
