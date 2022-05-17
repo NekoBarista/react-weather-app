@@ -15,13 +15,13 @@ function convertToCelsius(event){
     if (units==="metric")
     return (
 <h2> 
-    {Math.round(props.celsius)}° C / <a href="#" onClick={convertToFahrenheit}>F</a>  
+    {Math.round(props.celsius)}° C / <a href="/" onClick={convertToFahrenheit}>F</a>  
 </h2>
     )
 else
 return (
     <h2> 
-    {Math.round(props.celsius*9)/5+32}° <a href="#" onClick={convertToCelsius}>C</a> / F  
+    {Math.round(props.celsius*9)/5+32}° <a href="/" onClick={convertToCelsius}>C</a> / F  
 </h2>
 )
 }
