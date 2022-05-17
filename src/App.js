@@ -5,13 +5,13 @@ import WeatherInfo from './WeatherInfo';
 
 
 function App() {
- const [weatherData, setWeatherData] = useState(null);
- const [submit, setSubmit] = useState(false);
+ const [weatherData, setWeatherData] = useState({submit:false});
  const [city, SetCity] = useState("Melbourne")
   
 
 function handleSubmit(event){
 event.preventDefault()
+search()
 }
 
 function search() {
@@ -23,7 +23,7 @@ axios.get(apiUrl).then(handleResponse)
 
 function handleCitySearch(event) {
 SetCity(event.target.value)
-search()
+
 }
 
 
@@ -31,17 +31,17 @@ search()
 
 function handleResponse(response) {
 setWeatherData(
-  {
+  {submit: true,
     temperature:response.data.main.temp, 
     city:response.data.name, 
     description: response.data.weather[0].description, 
     iconUrl: "https://cdn.icon-icons.com/icons2/2505/PNG/512/sunny_weather_icon_150663.png",
   date: new Date(response.data.dt*1000)})
-    setSubmit(true);
+    
 }
 
  
-if(submit) {
+if(weatherData.submit) {
   return (
     <div>
       <WeatherInfo data={weatherData}/>
