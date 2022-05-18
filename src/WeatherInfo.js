@@ -1,4 +1,5 @@
 import React from "react";
+import "./weatherinfo.css"
 import DisplayDate from "./DisplayDate"
 import WeatherIcon from "./WeatherIcon";
 import Temperature from "./Temperature";
@@ -10,6 +11,6 @@ export default function WeatherInfo(props){
         <DisplayDate date={props.data.date}/>
        <WeatherIcon code={props.data.icon} />
         <Temperature celsius={props.data.temperature} />
-        <h5> {props.data.description}</h5>
+        <h6> {props.data.description}</h6>
         </div> )
         }
