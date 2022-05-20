@@ -2,11 +2,12 @@ import './App.css';
 import React, {useState} from 'react';
 import axios from 'axios';
 import WeatherInfo from './WeatherInfo';
+import WeatherForecast from './WeatherForecast';
 
 
 function App() {
  const [weatherData, setWeatherData] = useState({submit:false});
- const [city, SetCity] = useState("Melbourne, Au")
+ const [city, SetCity] = useState("Melbourne, AU")
   
 
 function handleSubmit(event){
@@ -27,6 +28,7 @@ SetCity(event.target.value)
 function handleResponse(response) {
 setWeatherData(
   {submit: true,
+    coordinates:response.data.coord,
     temperature:response.data.main.temp, 
     city:response.data.name, 
     description: response.data.weather[0].description, 
@@ -38,16 +40,33 @@ setWeatherData(
  
 if(weatherData.submit) {
   return (
-    <div>
+    <div className='container'>
+       <div className='row justify-content-md-center'>
+         <div className='col col-lg-3'>
+
+         </div>
+         <div className='col col-lg auto'>
       <WeatherInfo data={weatherData}/>
-     <form className="cityForm" onSubmit={handleSubmit}>
+      <WeatherForecast coordinates={weatherData.coordinates}/>
+ 
+     </div>    
+     <div className='col col-lg-3'>
+         </div>
+         <div className='row justify-content-md-center, form'>
+         <form className="cityForm" onSubmit={handleSubmit}>
        <input type='text'placeholder="Enter a City" className="searchBox" onChange={handleCitySearch}></input> 
        <input type='submit' className="btn btn-primary" value="Search"></input>
      </form>
+
+         </div>
+    <div className='col col-lg-2'>
+         </div>
       <div className="smallText">
          Open Source Code by <a href='https://github.com/NekoBarista/react-weather-app'> Vicki Smith </a> 
       </div>
       </div>
+       </div>
+      
   );}
 
   else {

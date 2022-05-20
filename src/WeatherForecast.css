@@ -1,0 +1,18 @@
+body { text-align: center;
+color: greenyellow;
+}
+
+.forecastMin { opacity: 70%;
+
+}
+
+.forecastMax  {font-weight: bold;
+
+}
+.forecastDay { font-weight: bold;
+
+}
+
+.canvas {margin: 2px;
+
+}

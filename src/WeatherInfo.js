@@ -8,8 +8,8 @@ export default function WeatherInfo(props){
     return (
         <div className="App">    
         <h1>  {props.data.city} </h1>
-        <DisplayDate date={props.data.date}/>
-       <WeatherIcon code={props.data.icon} />
+     <DisplayDate date={props.data.date}/>
+       <WeatherIcon code={props.data.icon} size={62}/>
         <Temperature celsius={props.data.temperature} />
         <h6> {props.data.description}</h6>
         </div> )
