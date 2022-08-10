@@ -24,7 +24,7 @@ h5 {margin-top: 5px;}
 p {margin: 0px}
 
 
-body {
+.container {
   background-image: url("./images/gameboy.png.png");
   background-color: #cccccc;
   background-position-x: center;
