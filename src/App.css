@@ -23,12 +23,14 @@ h5 {margin-top: 5px;}
 
 p {margin: 0px}
 
-.container {
+
+body {
   background-image: url("./images/gameboy.png.png");
-  background-size: 100%;
-  background-position: center;
+  background-color: #cccccc;
+  background-position-x: center;
+  background-size: 1000px;
   background-repeat: no-repeat;
-}
+ }
 
 body {  
   background-color: #cccccc;
