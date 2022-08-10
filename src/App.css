@@ -27,10 +27,10 @@ p {margin: 0px}
 .container {
   background-image: url("./images/gameboy.png.png");
   background-color: #cccccc;
-  background-position-x: center;
-  background-size: 1000px;
+  background-size: 100%;
+  background-position: center;
   background-repeat: no-repeat;
- }
+}
 
 body {  
   background-color: #cccccc;
