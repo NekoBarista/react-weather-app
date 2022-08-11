@@ -30,58 +30,8 @@ body {  background-color: #cccccc;
 
 @media(max-width: 450px) {
 
-<<<<<<< HEAD
-  .weatherInfo {margin-top: 100px !important}
-   .weatherInfo {margin-bottom: 100px !important}
- 
-
-   .smallText {
-    text-align: left;
-    margin-top: 50px !important;
-    font-weight: lighter;
-  }
-   
- }
- 
-
-
- @media(max-width: 700px) {
-
-  .container {margin-top: 150px }
-   .weatherInfo {margin-bottom: 100px}
- 
-
-   .smallText {
-    text-align: left;
-    margin-top: 50px !important;
-    font-weight: lighter;
-  }
-   
- }
-
-
- @media(max-width: 1000px) {
-
-  .container {margin-top: 200px }
-  .container {margin-left: 30px}
-   .weatherInfo {margin-bottom: 100px }
- 
-
-   .smallText {
-    text-align: left;
-    margin-top: 50px !important;
-    font-weight: lighter;
-  }
-   
- }
-
-
- 
-
-=======
   .weatherInfo {margin-top: 325px !important}
   .weatherInfo {margin-bottom: 100px !important}
->>>>>>> parent of 1acb7a1 (responsive fixes)
 
   
 }
