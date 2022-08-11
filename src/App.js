@@ -56,7 +56,7 @@ if(weatherData.submit) {
          <div className='searchForm'>
          <div className='row justify-content-md-center form'>
          <form className="cityForm" onSubmit={handleSubmit}>
-       <input type='text'placeholder="Enter a City" className="searchBox" onChange={handleCitySearch}></input> 
+       <input type='text'placeholder="Enter a City" className="searchBox" onSubmit={handleCitySearch}></input> 
        <input type='submit' className="btn btn-primary" value="Search"></input>
      </form>
 </div>
