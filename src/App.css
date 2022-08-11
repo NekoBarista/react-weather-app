@@ -31,8 +31,8 @@ body {  background-color: #cccccc;
 
 @media(max-width: 500px) {
 
-  .weatherInfo {margin-top: 150px !important}
-  .weatherInfo {margin-bottom: 90px !important}
+  .weatherInfo {margin-top: 150px !important;
+    margin-bottom: 90px !important}
  .smallText {margin-top: 30px !important;}
 
   
@@ -40,8 +40,8 @@ body {  background-color: #cccccc;
 
 @media(max-width: 950px) {
 
-  .weatherInfo {margin-top: 120px }
-  .weatherInfo {margin-bottom: 80px}
+  .weatherInfo {margin-top: 120px;
+    margin-bottom: 80px}
  .smallText {margin-top: 30px !important;}
 
   
@@ -61,10 +61,23 @@ body {  background-color: #cccccc;
 @media(max-width: 2000px) {
 
   .weatherInfo {margin-top: 125px}
- .smallText {margin-top: 0px;}
 
   
 }
+
+
+@media(max-width: 300px) {
+  .weatherInfo {margin-top: 105px !important;
+  margin-bottom: 50px !important}
+  .smallText {margin-top: 10px !important;}
+
+  
+}
+
+
+  
+
+
 
 
 
