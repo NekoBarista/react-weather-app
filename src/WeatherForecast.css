@@ -18,7 +18,7 @@ color: greenyellow;
 }
 
 
-@media(max-width: 800px) {
+@media(max-width: 1000px) {
  
     .WeatherForecast {display: none}
   }
