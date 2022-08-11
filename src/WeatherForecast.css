@@ -16,3 +16,9 @@ color: greenyellow;
 .canvas {margin: 2px;
 
 }
+
+
+@media(max-width: 1000px) {
+ 
+    .WeatherForecast {display: none}
+  }
