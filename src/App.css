@@ -31,6 +31,7 @@ body {  background-color: #cccccc;
 @media(max-width: 450px) {
 
   .weatherInfo {margin-top: 250px !important}
+
   
 }
 
