@@ -46,7 +46,7 @@ if(weatherData.submit) {
 
          </div>
          <div className='col col-lg auto'>
-         <div className='weatherInfo'>
+         <div class="weatherInfo">
       <WeatherInfo data={weatherData}/>
       <WeatherForecast coordinates={weatherData.coordinates}/>
  </div>
