@@ -20,17 +20,21 @@ body {  background-color: #cccccc;
 }
 
 
-.container {
+body {
   background-image: url("./images/gameboy.png.png");
   background-size: 100%;
-  background-position: center;
+  background-position-x: center;
+  background-position-y: 10vw;
   background-repeat: no-repeat;
+  position: fixed;
 
 }
 
+
+
+
 @media(max-width: 450px) {
 
-<<<<<<< HEAD
   .weatherInfo {margin-top: 100px !important}
    .weatherInfo {margin-bottom: 100px !important}
  
@@ -78,13 +82,7 @@ body {  background-color: #cccccc;
 
  
 
-=======
-  .weatherInfo {margin-top: 325px !important}
-  .weatherInfo {margin-bottom: 100px !important}
->>>>>>> parent of 1acb7a1 (responsive fixes)
 
-  
-}
 
 
 
